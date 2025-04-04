@@ -7,7 +7,7 @@ export default function Home() {
       <Head>
         <title>My Data Science Portfolio</title>
       </Head>
-      <h1 className="text-3xl font-bold mb-4">Hi, I'm [Your Name]</h1>
+      <h1 className="text-3xl font-bold mb-4">Hi, I'm Rushikesh</h1>
       <p className="text-lg mb-6">
         I'm a data scientist who loves building ML models, visualizations, and solving real-world problems.
       </p>
