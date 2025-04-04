@@ -1,17 +1,13 @@
 import { projects } from '../data/projects';
+import { ProjectCard } from '../components/ProjectCard';
 
 export default function Projects() {
   return (
-    <div className="p-6">
-      <h1 className="text-2xl font-bold mb-4">Projects</h1>
-      <div className="grid gap-6">
+    <div>
+      <h1 className="text-3xl font-bold mb-6">Projects</h1>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {projects.map((project, index) => (
-          <div key={index} className="border rounded-xl p-4 shadow">
-            <h2 className="text-xl font-semibold">{project.title}</h2>
-            <p className="mb-2">{project.description}</p>
-            <a href={project.github} className="text-blue-600 underline mr-4" target="_blank">GitHub</a>
-            <a href={project.demo} className="text-blue-600 underline" target="_blank">Live Demo</a>
-          </div>
+          <ProjectCard key={index} {...project} />
         ))}
       </div>
     </div>
